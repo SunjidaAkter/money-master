@@ -8,3 +8,9 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+.fonts{
+    font-size: 22px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
