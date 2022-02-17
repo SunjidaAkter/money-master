@@ -17,18 +17,19 @@ function clearingSavingPart() {
 //function for updating the expenses & balance
 function updateExpenses() {
     //input type error handling condition 
-    if (getInput('food-expenses') >= 0 && getInput('rent-expenses') >= 0 && getInput('clothes-expenses') >= 0 && getInput('income') >= 0) {
+    if (getInput('food-expenses') >= 0 && getInput('rent-expenses') >= 0 && getInput('clothes-expenses') >= 0 && getInput('income') >= 0 && getInput('income') != '' && getInput('food-expenses') != '' && getInput('rent-expenses') != '' && getInput('clothes-expenses') != '') {
         const totalExpenses = parseFloat(getInput('food-expenses')) + parseFloat(getInput('rent-expenses')) + parseFloat(getInput('clothes-expenses'));
         setOutput('total-expenses', totalExpenses);
         //mathematical error handling condition
-        if (getInput('income') >= totalExpenses) {
+        if (getInput('income') > totalExpenses) {
             const balance = parseFloat(getInput('income')) - totalExpenses;
             setOutput('balance', balance);
             document.getElementById('error1').style.display = 'none';
             clearingSavingPart();
         }
-        else {
+        else if (getInput('income') < totalExpenses) {
             setOutput('balance', 0);
+            setOutput('total-expenses', 0);
             document.getElementById('error1').style.display = 'block';
             clearingSavingPart();
         }
@@ -40,7 +41,7 @@ function updateExpenses() {
 //function for updating the savings & remaining balance
 function updateSavings() {
     //input type error handling condition 
-    if (getInput('income') > 0 && getInput('save') > 0) {
+    if (getInput('income') >= 0 && getInput('save') >= 0 && getInput('income') != '' && getInput('save') != '') {
         const savingAmount = parseFloat(getInput('income')) * parseFloat(getInput('save')) / 100;
         setOutput('saving-amount', savingAmount);
         //mathematical error handling condition
@@ -51,6 +52,7 @@ function updateSavings() {
         }
         else {
             setOutput('remaining-balance', 0);
+            setOutput('saving-amount', 0);
             document.getElementById('error2').style.display = 'block';
         }
     }
