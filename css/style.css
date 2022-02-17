@@ -1,6 +1,6 @@
 /* ***************************************font_awsome************************************************* */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap');
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Courgette', cursive;
 font-family: 'Inter', sans-serif;
@@ -8,9 +8,17 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-.fonts{
+.main-fonts{
     font-size: 22px;
     color: #000000;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+}
+.normal-fonts{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
 }

@@ -28,21 +28,51 @@
     <link rel="shortcut icon" href="./images/shape-6.png" type="image/x-icon">
 
     <!-- -------------------------title--------------------------- -->
-    <title>Financial Planing</title>
+    <title>Financial Planning</title>
 </head>
 
 <body>
     <!-- --------------------------heading part--------------------------- -->
     <header>
-        <p class="head-line text-center mt-9 text-green-700 font-bold text-5xl">Financial Planning</p>
+        <p class="head-line text-center mt-9 text-lime-900 font-bold text-5xl">Financial Planning</p>
     </header>
     <main>
-        <section class="mx-auto w-10/12 flex justify-between">
+        <section class="mx-auto w-10/12 grid lg:grid-cols-2 sm:grid-cols-1 gap-4">
             <div>
-                <img src="./images/visual-stories-micheile-SoT4-mZhyhE-unsplash.jpg" alt="">
+                <img class="w-10/12 mb-3 mt-20" src="./images/visual-stories-micheile-SoT4-mZhyhE-unsplash.jpg" alt="">
             </div>
-            <div>
-                <p class="text-center fonts">Income</p>
+            <div class="mt-14 bg-lime-100 p-8 rounded-3xl mb-5">
+                <p class="text-center main-fonts">Income</p>
+                <div class="flex justify-center my-4">
+                    <p class="normal-fonts ">Income:</p>
+                    <input class="ml-8 w-2/5 bg-slate-300 rounded-xl" type="text" id="">
+                </div>
+                <p class="text-center main-fonts">Expenses</p>
+                <div class="flex justify-center my-4">
+                    <p class="normal-fonts ">Income:</p>
+                    <input class="ml-8 w-2/5 bg-slate-300 rounded-xl" type="text" id="">
+                </div>
+                <div class="flex justify-center my-4">
+                    <p class="normal-fonts ">Income:</p>
+                    <input class="ml-8 w-2/5 bg-slate-300 rounded-xl" type="text" id="">
+                </div>
+                <div class="flex justify-center my-4">
+                    <p class="normal-fonts ">Income:</p>
+                    <input class="ml-8 w-2/5 bg-slate-300 rounded-xl" type="text" id="">
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-lime-800 text-white font-bold px-12 py-2 rounded-2xl my-5">Calculate</button>
+                </div>
+                <p class="text-center main-fonts my-4">Total Expenses: 5500 </p>
+                <p class="text-center main-fonts my-4">Balance: 4500 </p>
+                <div class="flex justify-evenly items-center my-6">
+                    <p class="normal-fonts ">Save:</p>
+                    <input class=" bg-slate-300 rounded-xl h-7" type="text" id="">
+                    <p class="normal-fonts ">%</p>
+                    <button class="bg-lime-800 text-white font-bold px-12 py-2 rounded-2xl ">Save</button>
+                </div>
+                <p class="text-center main-fonts my-4">Saving Amount: 2000 </p>
+                <p class="text-center main-fonts my-4">Remaining Balance: 2500 </p>
             </div>
         </section>
     </main>
