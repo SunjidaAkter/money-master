@@ -28,7 +28,7 @@ function updateExpenses() {
             clearingSavingPart();
         }
         else {
-            setOutput('balance', "");
+            setOutput('balance', 0);
             document.getElementById('error1').style.display = 'block';
             clearingSavingPart();
         }
@@ -50,7 +50,7 @@ function updateSavings() {
             document.getElementById('error2').style.display = 'none';
         }
         else {
-            setOutput('remaining-balance', '');
+            setOutput('remaining-balance', 0);
             document.getElementById('error2').style.display = 'block';
         }
     }
