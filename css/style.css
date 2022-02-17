@@ -1,4 +1,4 @@
-/* ***************************************font_awsome************************************************* */
+/* ***************************************font_family************************************************* */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap');
 /* font-family: 'Bebas Neue', cursive;
@@ -8,6 +8,8 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+
+/* **************************************main_font_design********************************************** */
 .main-fonts{
     font-size: 22px;
     color: #000000;
@@ -15,10 +17,20 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
 }
+
+/* **************************************normal_font_design******************************************** */
 .normal-fonts{
     font-size: 18px;
     color: #000000;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
+}
+
+
+/* **************************************error_massages_design******************************************** */
+.error{
+    display: none;
+    color: red;
+    font-size: small;
 }
